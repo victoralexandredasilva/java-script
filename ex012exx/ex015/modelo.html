@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+    <header>
+    <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div> <!--Formulário-->
+
+            <div> Ano de Nascimento:
+                <input type="number" name="ano" id="ano" min="1900" max="2023">
+            </div>
+            <div>
+                Sexo:
+                <input type="radio" name="sexo" id="sxmas" required>
+                <label for="sxmas">Masculino</label>
+                <input type="radio" name="sexo" id="sxfem" required>
+                <label for="sxfem">Feminino</label>
+            </div>
+            <div>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </div>
+        </div><!--Formulário-->
+
+        <div id="res">
+            Preencha os dados acima para ver os resultados!
+            <img id="foto" src="" alt="">
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy;CursoemVídeo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

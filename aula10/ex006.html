@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style> /*CSS*/
+        div#container{
+            background-color: rgb(218, 98, 98);
+            color: white;
+            font: bolder 16pt Arial;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.61);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            Clique Aqui!
+    </div>
+
+    <script>
+        var div = window.document.getElementById('container')
+        div.addEventListener('click', clicou)
+        div.addEventListener('mouseenter', entrou)
+        div.addEventListener('mouseout', saiu )
+        
+        
+         function clicou() {
+            
+            div.innerText = 'Clicou!'
+            div.style.background = 'green'
+        }
+        function entrou() {
+            
+            div.innerText = 'Entrou!'
+            div.style.background = 'blue'
+        }
+        function saiu() {
+           
+            div.innerText = 'Clique Aqui!'
+            div.style.background = 'red'
+        }
+    </script>
+</body>
+</html>

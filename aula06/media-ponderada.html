@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Ponderada</title>
+    <style>
+        body{
+            background: rgba(205, 41, 41, 0.674);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de JavaScript</h1>
+    <p>
+        Vamos fazer um exercício de JS, fazendo cálculo com média ponderada
+    </p>
+
+    <script>
+        //Notas//
+        var r = Number(window.prompt('Digite sua nota em Redação'))
+        var l = Number(window.prompt('Digite sua nota em Linguagens'))
+        var h = Number(window.prompt('Digite sua nota em Ciências Humanas'))
+        var n = Number(window.prompt('Digite sua nota em Ciências da Natureza'))
+        var m = Number(window.prompt('Digite sua nota em Matemática:'))
+
+        //Peso em cada área//
+        var pr = Number(window.prompt('Digite o peso em Redação'))
+        var pl = Number(window.prompt('Digite o peso em Linguagens'))
+        var ph = Number(window.prompt('Digite o peso em Ciências Humanas'))
+        var pn = Number(window.prompt('Digite o peso em Ciências da Natureza'))
+        var pm = Number(window.prompt('Digite o peso em Matemática'))
+
+        //Soma dos Pesos//
+        var sp = (pr+pl+ph+pn+pm)
+
+        //Cálculo da Média Ponderada
+        var media = ((r*pr)+(l*pl)+(h*ph)+(n*pn)+(m*pm))/sp
+
+        //Mostrando a Média Ponderada//
+        window.alert(`A sua Média Final de acordo com o resultado do ENEM é igual à ${media}`)
+    </script>
+</body>
+</html>

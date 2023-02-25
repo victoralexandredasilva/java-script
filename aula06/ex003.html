@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa</title>
+    <style>
+        body{
+            background:blueviolet;
+            color:white;
+        }
+
+        h1{
+            color: white;
+            font: 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <script>
+
+        //Notas//
+     var m = Number(window.prompt('Digite a sua nota em Matemática: '))
+     var r = Number(window.prompt('Digite a sua nota em Redação: '))
+     var n = Number(window.prompt('Digite a sua nota em Natureza: '))
+     var h = Number(window.prompt('Digite a sua nota em Humanas: '))
+     var l = Number(window.prompt('Digite a sua nota em Linguagens: '))
+
+        //Pesos//
+     var pm = Number(window.prompt('Digite o peso em Matemática:')) 
+     var pr = Number(window.prompt('Digite o peso em Redação:')) 
+     var pn = Number(window.prompt('Digite o peso em Natureza:')) 
+     var ph = Number(window.prompt('Digite o peso em Humanas:')) 
+     var pl = Number(window.prompt('Digite o peso Linguagens:')) 
+
+        //Soma dos Pesos//
+     var sp = (pl+ph+pm+pn+pr)
+
+        //Cálculo da Média Ponderada//
+     var media = ((m*pm)+(r*pr)+(n*pn)+(h*ph)+(l*pl))/sp
+
+        //Média da Nota//
+     window.alert(`A sua média é: ${media}`)
+
+    </script
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background: #61b55f;
+            color: white;
+            font: normal 16pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p><strong>DOM</strong> no JavaScript</p>
+    <div id="caixa">Clique em mim </div>
+
+
+    <script>
+      
+
+        var id = window.document.getElementById('caixa')
+        window.document.write(id.innerText)
+        caixa.style.background = 'blue'
+
+        id.style.textAlign = 'center'
+
+        var sel = window.document.querySelector('h1')
+
+        sel.style.border = '2px solid black'
+        sel.style.textAlign = 'center'
+
+
+    </script>
+</body>
+</html>        

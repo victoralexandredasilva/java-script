@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            font: normal 20pt Arial;
+            background-color: bisque;
+            width: 300px;
+        }
+
+        main{
+            border: 2px solid black;
+            background: rgba(255, 255, 255, 0.647);
+            padding: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <script>
+            //Informações produto 1//
+
+           var p1 = window.prompt('Digite o produto')  //Pede o nome do produto//
+           var n1 = Number(window.prompt('Digite o preço')) //Pede o preço do produto
+           var preco1 = n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) //Transforma o número em forma de R$//
+           document.write(`${p1}:`) //Anuncia no corpo do site o nome do produto//
+           document.write(` ${preco1} <br>`) //Anuncia no corpo do site o preço do produto// 
+
+            //Informações produto 2//
+
+           var p2 = window.prompt('Digite o produto')
+           var n2 = Number(window.prompt('Digite o preço'))
+           var preco2 = n2.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+           document.write(`${p2}:`)
+           document.write(` ${preco2} <br>`)
+
+            //Informações produto 3//
+
+           var p3 = window.prompt('Digite o produto')
+           var n3 = Number(window.prompt('Digite o preço'))
+           var preco3 = n3.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+           document.write(`${p3}:`)
+           document.write(` ${preco3} <br>`)
+
+            //Informações produto 4//
+
+           var p4 = window.prompt('Digite o produto')
+           var n4 = Number(window.prompt('Digite o preço'))
+           var preco4 = n4.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+           document.write(`${p4}:`)
+           document.write(` ${preco4} <br>`)
+
+            //Informações produto 5//
+
+           var p5 = window.prompt('Digite o produto')
+           var n5 = Number(window.prompt('Digite o preço'))
+           var preco5 = n5.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+           document.write(`${p5}:`)
+           document.write(` ${preco5} <br>`)
+
+            //Soma de todos os valores//
+        
+            var total = (n1+n2+n3+n4+n5) //Faz a soma dos valores dos produtos//
+            var total = total.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) //Transforma o número obtido em R$//
+
+        
+        document.write(`Total: ${total}`) // Anuncia o valor total dos produtos em R$//
+        </script>
+    </main>
+</body>
+</html>

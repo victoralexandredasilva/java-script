@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1" >
+    e
+    <input type="number" name="txtn2" id="txtn2" >
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="Dividir" onclick="dividir()">
+    <div id="res"></div>
+
+    <script>
+        function somar() {
+
+            var tn1 = (window.document.getElementById('txtn1'))
+            var tn2 = (window.document.getElementById('txtn2'))
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var res = window.document.querySelector('div#res')
+            var soma = n1 + n2
+            
+
+            res.innerHTML = `<p>O resultado da soma entre ${n1} e ${n2} é igual a <strong>${soma}</strong></p>`
+
+        }
+        function subtrair() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1-n2
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>A subtração entre ${n1} e ${n2} é igual a <strong>${soma}</strong></p>`
+        }
+        function multiplicar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var multiplicar = n1*n2
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>O resultado da multiplicação entre ${n1} e ${n2} é igual a <strong>${multiplicar}</strong></p>`
+        }
+        function dividir() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var dividir = n1/n2
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>O resultado da divisão entre ${n1} e ${n2} é igual a <strong>${dividir}</strong></p>`
+        }
+    </script>
+
+    <!-- Passos para realizar as operações de valores:
+
+     1° Criar as caixas com formatos de número; 
+    2° Criar os botôes com o tipo de operação a ser feita e usando o onclick (FUNÇÃO);
+    3° Criar o script com a função;
+    4° Fazer a ligação das caixas usando uma variavel (simplificando);
+    5° Fazer o código para pegar o valor da caixa (var.value)
+    6° Fazer a variável de soma   -->
+    
+
+
+
+
+</body>
+</html>
